@@ -19,6 +19,9 @@ export default function Navbar(props) {
         <li className="nav-item">
           <a className="nav-link" href="/">{props.aboutText}</a>
         </li>
+        <li className="nav-item">
+        <a className="nav-link" href="/">{props.login}</a>
+        </li>
       </ul>
       <form className="d-flex" role="search">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
@@ -32,9 +35,10 @@ export default function Navbar(props) {
   )
 }
 
-Navbar.PropTypes = {
+Navbar.propTypes = {
     title: PropTypes.string,
     aboutText: PropTypes.string,
+    login: PropTypes.string,
 }
 
 Navbar.defaultProps={
